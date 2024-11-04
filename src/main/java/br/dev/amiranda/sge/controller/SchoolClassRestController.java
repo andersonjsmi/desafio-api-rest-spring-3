@@ -18,7 +18,7 @@ import java.util.Set;
 
 @RestController
 @RequestMapping("/classes")
-public class ClassController {
+public class SchoolClassRestController {
     private final SchoolClassService service;
     private final StudentService studentService;
 
@@ -27,7 +27,7 @@ public class ClassController {
      * @param service Service de controle das Classes
      * @param  studentService Service de controle de estudantes
      */
-    public ClassController(SchoolClassService service, TeacherService teacherService, StudentService studentService) {
+    public SchoolClassRestController(SchoolClassService service, TeacherService teacherService, StudentService studentService) {
         this.service = service;
         this.studentService = studentService;
     }

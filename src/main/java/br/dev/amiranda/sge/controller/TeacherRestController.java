@@ -12,16 +12,15 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import java.net.URI;
-import java.util.List;
 import java.util.Set;
 
 @RestController
 @RequestMapping("/teachers")
-public class TeacherController {
+public class TeacherRestController {
     private final TeacherService service;
 
 
-    public TeacherController(TeacherService service) {
+    public TeacherRestController(TeacherService service) {
         this.service = service;
 
     }
